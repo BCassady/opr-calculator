@@ -189,6 +189,9 @@ class StartPage(tk.Frame):
             f.close
 
         def load():
+            teams.clear()
+            matches.clear()
+
             f = open(in_name.get() + "-teams" + ".txt", "r")
             for line in f.readlines():
                 teams.append(line)
